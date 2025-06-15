@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "REPLACE_WITH_UNIQUE_BUCKET_NAME"  # Use a globally unique name
+    bucket         = "terraform-state-bucket-kassim08"  # Use a globally unique name
     key            = "vpcactions/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
